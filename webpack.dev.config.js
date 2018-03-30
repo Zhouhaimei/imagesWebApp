@@ -24,12 +24,12 @@ const devConfig = {
         }]
     },
     devServer: {
-        port: 8080,
+        port: 8081,
         contentBase: path.join(__dirname, './dist'),
         historyApiFallback: true,
         host: '0.0.0.0',
         proxy: {
-            "/api/*": "http://localhost:8090/$1"
+            "/api/*": "http://localhost:3000/"
         }
     }
 };
